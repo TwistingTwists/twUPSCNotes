@@ -249,6 +249,8 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/ui/Buttons/new-here</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/GitHub/Branch</li>
@@ -264,6 +266,8 @@ Error message and password prompt
 <li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
+
+<li>$:/NewVisual</li>
 
 <li>$:/palette</li>
 
@@ -664,6 +668,8 @@ Error message and password prompt
 <li>Multilateralism</li>
 
 <li>NDPS act, 1985</li>
+
+<li>New Tiddler</li>
 
 <li>not dissolve with LS</li>
 
@@ -10155,6 +10161,28 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div caption="{{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}}" created="20201020064704745" description="{{$:/language/Buttons/NewHere/Hint}}" modified="20201020064732242" title="$:/core/ui/Buttons/new-here">
+<pre>\whitespace trim
+\define newHereActions()
+&lt;$set name=&quot;tags&quot; filter=&quot;[&lt;currentTiddler&gt;] [{$:/config/NewTiddler/Tags!!tags}]&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; tags=&lt;&lt;tags&gt;&gt;/&gt;
+&lt;/$set&gt;
+\end
+\define newHereButton()
+&lt;$button actions=&lt;&lt;newHereActions&gt;&gt; tooltip={{$:/language/Buttons/NewHere/Hint}} aria-label={{$:/language/Buttons/NewHere/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/new-here-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;
+&lt;$text text={{$:/language/Buttons/NewHere/Caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+&lt;&lt;newHereButton&gt;&gt;
+</pre>
+</div>
 <div created="20201004234151178" modified="20201009203134798" title="$:/DefaultTiddlers">
 <pre>TOC</pre>
 </div>
@@ -10180,6 +10208,28 @@ Error message and password prompt
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
+</div>
+<div created="20201020063759907" modified="20201020064639332" tags="$:/tags/PageControls $:/tags/ViewToolbar" title="$:/NewVisual">
+<pre>\whitespace trim
+\define newHereActions()
+&lt;$set name=&quot;tags&quot; filter=&quot;[&lt;currentTiddler&gt;] [{$:/config/NewTiddler/Tags!!tags}]&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; tags=&lt;&lt;tags&gt;&gt; type=&quot;text/x-htmlp&quot;/&gt;
+&lt;/$set&gt;
+\end
+\define newHereButton()
+&lt;$button actions=&lt;&lt;newHereActions&gt;&gt; tooltip={{$:/language/Buttons/NewHere/Hint}} aria-label={{$:/language/Buttons/NewHere/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot; &gt;
+{{$:/core/images/new-here-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;
+&lt;$text text={{$:/language/Buttons/NewHere/Caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+&lt;&lt;newHereButton&gt;&gt;
+</pre>
 </div>
 <div created="20201008092457939" modified="20201008092521693" title="$:/palette">
 <pre>$:/palettes/Twilight</pre>
@@ -10350,16 +10400,16 @@ Error message and password prompt
 <div created="20201004131601291" modified="20201018164027370" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/Gitea</pre>
 </div>
-<div created="20201005000203033" modified="20201009075349164" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Tags</pre>
+<div created="20201005000203033" modified="20201020063536975" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Shadows</pre>
 </div>
-<div created="20201004132853455" modified="20201019081621861" title="$:/state/tab/sidebar--595412856">
+<div created="20201004132853455" modified="20201020063938206" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201019151438037" list="[[Tagore vs Gandhi]] TOC" modified="20201019151438037" title="$:/StoryList">
+<div created="20201020062846627" list="[[New Tiddler]] [[Tagore vs Gandhi]] $:/NewVisual $:/core/ui/Buttons/new-here $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here" modified="20201020064144434" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201006040408251" modified="20201008142110754" title="$:/temp/advancedsearch">
@@ -10368,7 +10418,7 @@ Error message and password prompt
 <div title="$:/temp/BrowserStorage/Log">
 <pre></pre>
 </div>
-<div created="20201019151432134" modified="20201019151432134" title="$:/temp/ckeready">
+<div created="20201019151432134" modified="20201020062810183" title="$:/temp/ckeready">
 <pre>ready</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10429,7 +10479,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201012144931940" modified="20201018162239951" title="$:/temp/NewTagName">
+<div created="20201012144931940" modified="20201020064125406" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20201005000314219" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20201005000314219" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -12405,6 +12455,41 @@ bhaang , CBD oil = made from leaves
 
 </pre>
 </div>
+<div created="20201020062957012" modified="20201020063216187" tags="" title="New Tiddler" type="text/x-htmlp">
+<pre>&lt;table border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; style=&quot;width:500px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+	&lt;th scope=&quot;col&quot;&gt;&lt;span style=&quot;font-family:Trebuchet MS,Helvetica,sans-serif&quot;&gt;Issue&lt;/span&gt;&lt;/th&gt;
+	&lt;th scope=&quot;col&quot;&gt;Tagore&lt;/th&gt;
+	&lt;th scope=&quot;col&quot;&gt;Gandhi&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+	&lt;td&gt;education&amp;nbsp;&lt;/td&gt;
+	&lt;td&gt;boycott is ok, but gandhi giving no real alternative&amp;nbsp;&lt;/td&gt;
+	&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;Nationalism&lt;/td&gt;
+	&lt;td&gt;internationalist, universalism&lt;/td&gt;
+	&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;freedom movement (NCM, CDM)&lt;/td&gt;
+	&lt;td&gt;NCM - not lead to social development&lt;/td&gt;
+	&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;swadeshi&amp;nbsp;&lt;/td&gt;
+	&lt;td&gt;burning of clothes and khadi are NOT reason backed&lt;br /&gt;
+	&lt;br /&gt;
+	are dogma&lt;/td&gt;
+	&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</pre>
+</div>
 <div created="20201005002101649" modified="20201005002140138" title="not dissolve with LS">
 <pre>Motion to remove SC judge 124(4) does not dissolve </pre>
 </div>
@@ -12818,13 +12903,10 @@ No single document on //how to?//
 
 BCCI , UN not state under 12</pre>
 </div>
-<div created="20201019134551913" modified="20201019141744596" tags="gs1 personalities" title="Tagore vs Gandhi">
-<pre>| Issue            | Tagore                                                                            | Gandhi |
-| ---------------- | --------------------------------------------------------------------------------- | ------ |
-| Educatoin        | Botcott is ok, but real alternative?                                              |        |
-| Nationalism      | Internationalist
-
-Universalism                                                    |        |
+<div created="20201019134551913" modified="20201020063950188" tags="gs1 personalities" title="Tagore vs Gandhi" type="text/x-htmlp">
+<pre>| Issue            | Tagore | Gandhi |
+| Educatoin        | Botcott is ok, but real alternative?    | |
+| Nationalism      | Internationalist , Universalism |        |
 | Freedom movement | NCM - not lead to social devleopment&lt;br&gt;                                          |        |
 | Swadeshi         | Burning of clothes and spinning yarn = not reason backed&lt;br&gt;But accepted as dogma |        |</pre>
 </div>
