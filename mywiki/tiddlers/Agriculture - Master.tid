@@ -1,0 +1,21 @@
+created: 20210402145107056
+modified: 20210404094901389
+tags: gs3 agriculture
+title: Agriculture - Master
+type: text/vnd.tiddlywiki
+
+|__[[Major Crops - Cropping Patterns in various parts of the country]]__| |
+|[[Different Types of Irrigation and Irrigation Systems]] | <<tag irrigation>>|
+|[[Storage, Transport and Marketing of Agricultural Produce and Issues and Related Constraints]] | <<tag 'TMA of Agri Produce'>>|
+|[[E-technology in the aid of farmers.]] | <<tag 'e-tech farmer'>>|
+|[[Issues related to Direct and Indirect Farm Subsidies and Minimum Support Prices; ]] | <<tag 'MSP and subsidy'>>|
+|__[[Public Distribution System - Objectives, Functioning, Limitations, Revamping; Issues of Buffer Stocks and Food Security]]__ | <<tag 'PDS Food Security'>>|
+|[[Technology Missions]] | <<tag 'agri missions'>>|
+|[[Economics of Animal-Rearing]] | <<tag livestock>>|
+|__[[Food Processing and Related Industries in India- Scope’ and Significance,Location, Upstream and Downstream Requirements, Supply Chain Management]]__ | <<tag 'food processing industry'>> |
+|[[Land Reforms in India]]| <<tag 'land reforms'>> |
+ 
+
+---
+
+<<list-links "[tag[agriculture]]">>

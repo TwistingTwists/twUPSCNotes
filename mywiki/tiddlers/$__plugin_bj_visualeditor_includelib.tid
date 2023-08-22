@@ -1,0 +1,6 @@
+created: 20201019151056895
+modified: 20201019151221035
+title: $:/plugin/bj/visualeditor/includelib
+type: text/vnd.tiddlywiki
+
+<script src="//cdn.ckeditor.com/4.15.0/full/ckeditor.js"></script>

@@ -1,0 +1,19 @@
+created: 20201028115755119
+modified: 20210123131602916
+tags: gs3 gs2 society
+title: Inequality
+type: text/vnd.tiddlywiki
+
+Political cost of inequality = 
+
+
+<$macrocall
+	$name="toc-tabbed-internal-nav"
+	tag="inequality"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>
+
+unique postiion of indian economy = lower rungs income decreasing, upper rung income inc
+

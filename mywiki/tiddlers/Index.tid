@@ -1,0 +1,83 @@
+created: 20190402161114969
+creator: IBMid-550004DBR7
+modified: 20201022065203603
+modifier: IBMid-550004DBR7
+tags: start TOC
+title: Index
+type: text/vnd.tiddlywiki
+
+! UPSC 
+
+
+! search in tiddlers for:
+<span style="white-space: nowrap;">
+  <$edit-text tiddler="$:/temp/fuse-search" default="" tag="input"/>
+  <$reveal state="$:/temp/fuse-search" type="nomatch" text="">
+                      <$button class="tc-btn-invisible">
+                                          <$action-setfield $tiddler="$:/temp/fuse-search" text="" />
+                                          {{$:/core/images/close-button}}
+                      </$button>
+  </$reveal>
+</span>
+
+<$set name="fuse-search" value={{$:/temp/fuse-search!!text}}>
+{{$:/plugins/TheDiveO/TwFusejs/templates/fusesearch}}
+</$set>
+
+
+
+---
+
+!!! Essay 
+<<list-links "[tag[essay]reverse[]]">>
+
+
+-----
+
+!! Think Rethink perform [TRP] 
+<<list-links "[tag[TRP]reverse[]]">>
+
+
+
+!! GS1
+<<list-links "[tag[gs1]reverse[]]">>
+
+
+!! GS2
+<<list-links "[tag[gs2]reverse[]]">>
+
+
+!! GS3
+<<list-links "[tag[gs3]reverse[]]">>
+
+<$macrocall
+	$name="toc-tabbed-internal-nav"
+	tag="gs3"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>
+
+!! GS4
+<<list-links "[tag[gs4]reverse[]]">>
+
+
+
+!!Introspection 
+<<list-links "[tag[introspection]reverse[]]">>
+
+
+
+!!!! Interview + Ethics Prep
+<<list-links "[field:class[virtues]reverse[]]">>
+
+!!!! Interview
+<<list-links "[tag[interview]reverse[]]">>
+
+!!!! Mindfulness Course
+<<list-links "[tag[mindfulness]reverse[]]">>
+
+--- 
+
+<<list-links "[tag[vipassana]reverse[]]">>
+

@@ -1,0 +1,25 @@
+created: 20201020063759907
+modified: 20201020070829567
+tags: $:/tags/PageControls $:/tags/ViewToolbar
+title: $:/NewVisual
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define newHereActions()
+<$set name="tags" filter="[<currentTiddler>] [{$:/config/NewTiddler/Tags!!tags}]">
+<$action-sendmessage $message="tm-new-tiddler"  type="text/x-htmlp"/>
+</$set>
+\end
+\define newHereButton()
+<$button actions=<<newHereActions>> tooltip={{$:/language/Buttons/NewHere/Hint}} aria-label={{$:/language/Buttons/NewHere/Caption}} class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]" >
+{{$:/core/images/new-here-button}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/NewHere/Caption}}/>
+</span>
+</$list>
+</$button>
+\end
+<<newHereButton>>

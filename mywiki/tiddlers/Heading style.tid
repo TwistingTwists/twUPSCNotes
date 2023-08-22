@@ -1,0 +1,16 @@
+created: 20201005162415422
+modified: 20210704150859729
+tags: $:/tags/Stylesheet
+title: Heading style
+type: text/vnd.tiddlywiki
+
+/*h2 {color: #e5721c} */
+
+h2 {color: #FF9933}  
+h3 { color: #d78062 /*#5EE7FD*/ }
+h4 { color: #adeb70}
+.hh2 { color: #c56183 } 
+h5 { color: pink} 
+. a { color:green };
+
+.viewer { font-size: 200pt;}

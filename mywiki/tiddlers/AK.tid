@@ -1,0 +1,12 @@
+created: 20220414152218520
+modified: 20220414152240948
+tags: 
+title: AK
+type: text/vnd.tiddlywiki
+
+[data-tiddler-title="{{!!title}}"]  a {
+  background: #292826;
+  color: #F9D342;
+  }
+
+<a href="https://myname.org"> This is text </a>

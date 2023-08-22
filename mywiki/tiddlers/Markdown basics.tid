@@ -1,0 +1,10 @@
+created: 20201008101608439
+modified: 20201008101610206
+title: Markdown basics
+type: text/vnd.tiddlywiki
+
+# Add some content to it and try making 'headings' 
+ -- > Write like this `!! Heading`
+
+# Try creating tables - Google "tables in Markdown format" 
+-- > write like `| column A | Columb B |` 

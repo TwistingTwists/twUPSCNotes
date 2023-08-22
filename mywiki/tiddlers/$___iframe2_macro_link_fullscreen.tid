@@ -1,0 +1,11 @@
+created: 20210622100340412
+modified: 20210622100425264
+tags: $:/tags/Macro
+title: $:/_iframe2/macro/link/fullscreen
+type: text/vnd.tiddlywiki
+
+\define iframe(url)
+[ext[Link|$url$]] {{$:/core/ui/Buttons/full-screen}}
+<iframe width="100%" height="900" src="$url$" frameborder="0"
+allowfullscreen></iframe>
+\end

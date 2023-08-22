@@ -1,0 +1,8 @@
+dependents: 
+description: Automatically download modified tiddlers
+list: readme settings
+name: Save Trail
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/savetrail
+type: application/json
+version: 5.1.22

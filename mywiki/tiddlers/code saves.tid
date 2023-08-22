@@ -1,0 +1,33 @@
+created: 20201006035712821
+modified: 20220414152216521
+tags: 
+title: code saves
+type: text/vnd.tiddlywiki
+
+`<$list filter="[tag[gs3]sort[title]]"/>`
+
+
+<<tag women>>
+
+
+[[$:/NewVisual]] https://groups.google.com/g/tiddlywiki/c/NE8RTvyXziQ/m/_2Uy-5gWRysJ
+
+
+[!is[system]!sort[modified]limit[25]] - advanced search - export all recently modified tiddlers
+
+`[all[tiddlers]!sort[modified]!prefix[$:/]] ` - lists down all the tiddlers in reverse date modified format
+
+_____
+
+[[$:/_iframe2/macro/link/fullscreen]] - for a macro that renders pdf via `<<iframe "link" >>` method
+
+
+[data-tiddler-class="links_clean"]  a {
+  background: #292826;
+  color: #F9D342;
+  }
+
+[data-tiddler-title="{{!!title}}"]  a {
+  background: #292826;
+  color: #F9D342;
+  }
